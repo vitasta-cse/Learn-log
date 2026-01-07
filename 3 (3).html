@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Log - Dashboard</title>
+  <link rel="stylesheet" href="3.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>📚 Learn Log</h1>
+    <p>Your personal study planner</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Tasks</a></li>
+      <li><a href="#">Calendar</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Dashboard -->
+  <main>
+    <section class="welcome">
+      <h2>Welcome back, Student!</h2>
+      <p>Plan your day, track progress, and stay consistent.</p>
+    </section>
+
+    <!-- Calendar Widget -->
+    <section class="calendar-section">
+      <h3>Today's Date</h3>
+      <p id="dateDisplay"></p>
+    </section>
+
+    <!-- Task Input -->
+    <section class="task-section">
+      <h3>Add a Study Task</h3>
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section class="progress-section">
+      <h3>Today's Progress</h3>
+      <p id="progressText">You have completed 0 tasks today.</p>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Learn Log | Built with ❤️ for students</p>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>
